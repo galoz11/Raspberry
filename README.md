@@ -1,3 +1,3 @@
 # Raspberry
 
-Shrink Raspberry micro sd card to minimum script
+Shrink Raspberry micro sd card image to minimum.
