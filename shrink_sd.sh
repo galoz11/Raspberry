@@ -3,7 +3,6 @@
 # copy image (leave original alone)
 # 1. ask to copy, if so copy and continue
 
-
 # show all loops find enpty loop to use
 lo=$(losetup -f)
 echo $lo
@@ -14,6 +13,7 @@ sudo losetup $lo -P --show $1
 check=$(sudo e2fsck -fy "$lo"p2 | grep "rootfs" | awk '{print $6}') 
 echo $check 
 
+# -M is to resize to minimum posible
 shring=$(sudo resize2fs "$lo"p2 -M )
 echo $shring 
 #total blocks
