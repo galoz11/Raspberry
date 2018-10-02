@@ -2,7 +2,7 @@
 
 Shrink Raspberry micro sd card image to minimum.
 
-```javascript
+```bash
 if (isAwesome){
   return true
 }
