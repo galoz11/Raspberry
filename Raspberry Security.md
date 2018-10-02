@@ -2,34 +2,38 @@
 ```sudo adduser dan```
 
 #### To add them to the sudo group to give them sudo permissions:
-sudo adduser galoz sudo
+```sudo adduser galoz sudo```
 
 
 #### logout and login with new user, check if you are sudo with this command:
-sudo su
+```sudo su```
 
 #### delete pi homefolder and user
-sudo deluser -remove-home pi
+```sudo deluser -remove-home pi```
 
 #### delete user pi:
+```
 sudo deluser pi
 sudo rm -r /home/pi
+```
 
 
 #### Make sudo require a password
-sudo nano /etc/sudoers.d/010_pi-nopasswd
+```sudo nano /etc/sudoers.d/010_pi-nopasswd```
 
-galoz ALL=(ALL) PASSWD: ALL
+dan ALL=(ALL) PASSWD: ALL
 
 #### Using key-based authentication.
-
+```
 ssh-keygen
 cat id_rsa.pub >> ~/.ssh/authorized_keys
 sudo chmod 644 ~/.ssh/authorized_keys
+```
 
-sudo nano /etc/ssh/sshd_config
+```sudo nano /etc/ssh/sshd_config```
+
 ChallengeResponseAuthentication no
 PasswordAuthentication no
 UsePAM no
 
-sudo service ssh reload
+```sudo service ssh reload```
