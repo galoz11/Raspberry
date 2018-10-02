@@ -32,8 +32,8 @@ sudo chmod 644 ~/.ssh/authorized_keys
 
 ```sudo nano /etc/ssh/sshd_config```
 ##### change those entry to "no"
-ChallengeResponseAuthentication no 
-PasswordAuthentication no 
-UsePAM no 
+* ChallengeResponseAuthentication no 
+* PasswordAuthentication no 
+* UsePAM no 
 
 ```sudo service ssh reload```
