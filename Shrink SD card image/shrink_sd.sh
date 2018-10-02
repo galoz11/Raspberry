@@ -1,7 +1,7 @@
 #!/bin/bash
-
-# copy image (leave original alone)
-# 1. ask to copy, if so copy and continue
+# shell script for shrinking micro sd card image on raspberry pi (Debian)
+# TODO:copy image (leave original alone)
+# TODO:1. ask to copy, if so copy and continue
 
 # show all loops find enpty loop to use
 lo=$(losetup -f)
@@ -43,7 +43,7 @@ sudo losetup -d $lo
 # Truncating image file
 sudo truncate --size=$newimage $1
 
-# Checks
+# TODO:Checks
 
 
 
