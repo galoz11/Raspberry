@@ -2,7 +2,7 @@
 
 ## Updae Debian on raspberry pi:
 ```
-sudo apt-get update && sudo apt-get upgrade
+sudo apt-get update && sudo apt-get upgrade -y
 ```
 ## Update Homeassistant:
 ```
